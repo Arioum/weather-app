@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="background">
+        <img src="assets/background.png" alt="">
+    </div>
+    <div class="container">
+        <div>
+            <form action="/" method="post" class="search-box">
+                <input type="text" name="cityName" placeholder="Enter Location">
+                <button type="submit">
+                    <img src="assets/search.svg" alt="">
+                </button>
+            </form>
+        </div>
+        <div class="search-result">
+            <div class="city-name">{{location}}</div>
+            <div class="flex">
+                <div class="forcast-icon"><img src="{{icon}}" alt=""></div>
+                <div class="temperature">
+                    {{temperature}}
+                </div>
+            </div>
+            <div class="forecast-title">
+                {{description}}
+            </div>
+            <div class="forecast-humidity">{{humidity}}</div>
+            <div class="forecast-windspeed"> {{windSpeed}}</div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 5f1265bb51468222b9a3cffc07e1d5f9 -->
