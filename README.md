@@ -5,7 +5,7 @@
 
 ### Command to run the App - 
 
-npm start
+<code>npm start</code>
 
 ### Tech Used -
 
